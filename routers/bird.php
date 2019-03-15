@@ -40,7 +40,7 @@ final class Bird extends UNIX {
       if ($this->config['bgp_detail']) {
         $cmd->add('all');
       }
-      $cmd("'");
+      $cmd->add("'");
 
       $commands[] = $cmd;
     }
@@ -61,7 +61,7 @@ final class Bird extends UNIX {
     if ($this->config['bgp_detail']) {
       $cmd->add('all');
     }
-    $cmd("'");
+    $cmd->add("'");
 
     return array($cmd);
   }
